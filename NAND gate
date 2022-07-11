@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,c;
+    cout<<"enter first value ";
+    cin>>a;
+    cout<<"enter second value ";
+    cin>>b;
+    if(a!=b||a==0&&b==0)
+    {
+        c=1;
+    }
+    else 
+    {c=0;
+    }
+    cout<<"NAND output is"<<c;
+   
+}

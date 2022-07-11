@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+int cmpstring(string one,string two)
+{ int i=0,j=0,n,m,count=0;
+n=one.length();
+m=two.length();
+ if(n!=m)
+  {  count=0;
+  }  
+     while(i<n)
+    {
+    while(j<m)
+    {
+        if(one[i]==two[j])
+        {
+            i++;
+            j++;
+        
+        }
+        else
+        {
+        j++;
+        }
+    }
+            if(j==m&&i!=n)
+             { j=0;
+               if(one[i]==two[j])
+           {
+               count=1;
+               j++;
+            //   {cout<<"string are rotation of one another"<<endl;
+               }
+             }
+    }
+            if(count)
+            { cout<<endl<<" strings are rotation "<<endl;
+            }
+        else
+        {cout<<endl<<" strings are not rotation ";
+   }
+        
+    
+    
+}
+int main()
+{
+    string one,two;
+   cout<<"enter the first string";
+   getline(cin,one);
+    cout<<"enter the second string";
+   getline(cin,two);
+   
+   
+   
+   
+//   cout<<one<<endl<<two;
+//   cout<<cmpstring(one,two);
+//       cout<<endl<<" strings are rotation ";
+//   }
+//   else
+//   {cout<<endl<<" strings are not rotation ";
+//   }
+}
